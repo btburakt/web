@@ -47,10 +47,7 @@
         <tr>
             <td>Hobileriniz :</td>
             <td>
-                <input type="checkbox" name="hobiler"> Sinema
-                <input type="checkbox" name="hobiler"> Gezmek
-                <input type="checkbox" name="hobiler"> Spor
-                <input type="checkbox" name="hobiler"> Kitap
+                <input type="checkbox" name="hobiler"> Seçiniz
             </td>
         </tr>
     </table>
