@@ -34,7 +34,6 @@
                 <select name="sehir">
                     <option>Seçiniz</option>
                     <option>Tokat</option>
-                    <option>İstanbul</option>
                 </select>
             </td>
         </tr>
