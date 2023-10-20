@@ -28,3 +28,33 @@
             <td>Soyad :</td>
             <td><input type="text" name="soyad"></td>
         </tr>
+        <tr>
+            <td>Şehir :</td>
+            <td>
+                <select name="sehir">
+                    <option>Seçiniz</option>
+                    <option>Ankara</option>
+                    <option>İstanbul</option>
+                    <option>Kocaeli</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Cinsiyet :</td>
+            <td>
+                <input type="radio" name="cinsiyet"> Erkek
+                <input type="radio" name="cinsiyet"> Kadın
+            </td>
+        </tr>
+        <tr>
+            <td>Hobileriniz :</td>
+            <td>
+                <input type="checkbox" name="hobiler"> Sinema
+                <input type="checkbox" name="hobiler"> Gezmek
+                <input type="checkbox" name="hobiler"> Spor
+                <input type="checkbox" name="hobiler"> Kitap
+            </td>
+        </tr>
+    </table>
+    <p align="center"><input type="submit" value="Kaydet"></p>
+</form>
