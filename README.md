@@ -1,4 +1,4 @@
-<h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+<h1>LLütfen Formu Eksiksiz Doldurunuz.</h1>
 <hr>
 <form>
     <table>
@@ -33,9 +33,9 @@
             <td>
                 <select name="sehir">
                     <option>Seçiniz</option>
-                    <option>Ankara</option>
+                    <option>Tokat</option>
                     <option>İstanbul</option>
-                    <option>Kocaeli</option>
+                    <option>Samsun</option>
                 </select>
             </td>
         </tr>
