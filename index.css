@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Sayfası Başlığı</title>
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Hizmetler</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>İçerik Başlığı 1</h2>
+            <p>Bu birinci bölümün içeriğidir.</p>
+        </section>
+        
+        <section>
+            <h2>İçerik Başlığı 2</h2>
+            <p>Bu ikinci bölümün içeriğidir.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Web Sayfası</p>
+    </footer>
+</body>
+</html>
+
+    
+    
