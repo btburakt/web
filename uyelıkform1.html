@@ -1,23 +1,91 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>Kayıt Ol</h1>
-    <p>Hesap oluşturmak için lütfen bu formu eksiksiz doldurunuz ...</p>
-    <hr>
+$p: hsl(213deg 85% 97%);
+$s: hsl(233deg 36% 38%);
+* { font-family: 'Poppins' }
+@mixin screen {
+	background: $p;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	box-shadow: 0 0 2em hsl(231deg 62% 94%);
+}
+body {
+	user-select: none;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(218deg 50% 91%);
+	height: 100vh;
+}
+.screen-1 {
+	@include screen;
+	gap: 2em;
+	.logo { margin-top: -3em }
+	.email {
+		background: hsl(0deg 0% 100%);
+		box-shadow: 0 0 2em hsl(231deg 62% 94%);
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		border-radius: 20px;
+		color: hsl(0deg 0% 30%);
+		margin-top: -3em;
+		input {
+			outline: none;
+			border: none;
+			&::placeholder {
+				color: hsl(0deg 0% 0%);
+				font-size: 0.9em;
+			}
+		}
+		ion-icon {
+			color: hsl(0deg 0% 30%);
+			margin-bottom: -.2em;
+		}
+	}
+	.Şifre {
+		background: hsl(0deg 0% 100%);
+		box-shadow: 0 0 2em hsl(231deg 62% 94%);
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		border-radius: 20px;
+		color: hsl(0deg 0% 30%);
+		input {
+			outline: none;
+			border: none;
+			&::placeholder {
+				color: hsl(0deg 0% 0%);
+				font-size: 0.9em;
+			}
+		}
+		ion-icon {
+			color: hsl(0deg 0% 30%);
+			margin-bottom: -.2em;
+		}
+		.show-hide {
+			margin-right: -5em;
+		}
+	}
+	.login {
+		padding: 1em;
+		background: hsl(233deg 36% 38%);
+		color: hsl(0 0 100);
+		border: none;
+		border-radius: 30px;
+		font-weight: 600;
+	}
+	.footer {
+		display: flex;
+		font-size: 0.7em;
+		color: hsl(0deg 0% 37%);
+		gap: 14em;
+		padding-bottom: 10em;
+		span { cursor: pointer }
+	}
+}
 
-    <label for="Ad"><b>Ad</b></label>
-    <input type="text" placeholder=" " name="A" id="A" required>
-
-    <label for="Soyad"><b>Soyad</b></label>
-    <input type="Soyad" placeholder="" name="S" id="S" required>
-
-    
-    <hr>
-
-    <p>1 <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Üye Ol</button>
-  </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-</form>
+button { cursor: pointer; }
