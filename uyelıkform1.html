@@ -1,91 +1,66 @@
-$p: hsl(213deg 85% 97%);
-$s: hsl(233deg 36% 38%);
-* { font-family: 'Poppins' }
-@mixin screen {
-	background: $p;
-	padding: 2em;
-	display: flex;
-	flex-direction: column;
-	border-radius: 30px;
-	box-shadow: 0 0 2em hsl(231deg 62% 94%);
-}
-body {
-	user-select: none;
-	overflow-y: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: hsl(218deg 50% 91%);
-	height: 100vh;
-}
-.screen-1 {
-	@include screen;
-	gap: 2em;
-	.logo { margin-top: -3em }
-	.email {
-		background: hsl(0deg 0% 100%);
-		box-shadow: 0 0 2em hsl(231deg 62% 94%);
-		padding: 1em;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		border-radius: 20px;
-		color: hsl(0deg 0% 30%);
-		margin-top: -3em;
-		input {
-			outline: none;
-			border: none;
-			&::placeholder {
-				color: hsl(0deg 0% 0%);
-				font-size: 0.9em;
-			}
-		}
-		ion-icon {
-			color: hsl(0deg 0% 30%);
-			margin-bottom: -.2em;
-		}
-	}
-	.Şifre {
-		background: hsl(0deg 0% 100%);
-		box-shadow: 0 0 2em hsl(231deg 62% 94%);
-		padding: 1em;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		border-radius: 20px;
-		color: hsl(0deg 0% 30%);
-		input {
-			outline: none;
-			border: none;
-			&::placeholder {
-				color: hsl(0deg 0% 0%);
-				font-size: 0.9em;
-			}
-		}
-		ion-icon {
-			color: hsl(0deg 0% 30%);
-			margin-bottom: -.2em;
-		}
-		.show-hide {
-			margin-right: -5em;
-		}
-	}
-	.login {
-		padding: 1em;
-		background: hsl(233deg 36% 38%);
-		color: hsl(0 0 100);
-		border: none;
-		border-radius: 30px;
-		font-weight: 600;
-	}
-	.footer {
-		display: flex;
-		font-size: 0.7em;
-		color: hsl(0deg 0% 37%);
-		gap: 14em;
-		padding-bottom: 10em;
-		span { cursor: pointer }
-	}
-}
-
-button { cursor: pointer; }
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, 
+                         initial-scale=1.0">
+    <title>GeeksforGeeks</title>
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+ 
+<body>
+    <header>
+        <h1 class="heading">GeeksforGeeks</h1>
+        <h3 class="title">Sliding Login & Registration Form</h3>
+    </header>
+ 
+    <!-- container div -->
+    <div class="container">
+ 
+        <!-- upper button section to select
+             the login or signup form -->
+        <div class="slider"></div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="signup">Signup</button>
+        </div>
+ 
+        <!-- Form section that contains the
+             login and the signup form -->
+        <div class="form-section">
+ 
+            <!-- login form -->
+            <div class="login-box">
+                <input type="email"
+                       class="email ele"
+                       placeholder="youremail@email.com">
+                <input type="password"
+                       class="password ele"
+                       placeholder="password">
+                <button class="clkbtn">Login</button>
+            </div>
+ 
+            <!-- signup form -->
+            <div class="signup-box">
+                <input type="text"
+                       class="name ele"
+                       placeholder="Enter your name">
+                <input type="email"
+                       class="email ele"
+                       placeholder="youremail@email.com">
+                <input type="password"
+                       class="password ele"
+                       placeholder="password">
+                <input type="password"
+                       class="password ele"
+                       placeholder="Confirm password">
+                <button class="clkbtn">Signup</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+	
