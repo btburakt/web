@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.flex-container > div {
+  color: white;
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+  
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.flex-item-left {
+  background-color: #915b5b;
+  padding: 10px;
+  
+}
+
+.flex-item-right {
+  background-color: rgb(128, 161, 134);
+  padding: 10px;
+
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="flex-container">
+  <div class="flex-item-left">Kapak</div>
+  <div class="flex-item-left">İçindekiler</div>
+  <div class="flex-item-left">Önsöz</div>
+  <div class="flex-item-left">Bölüm</div>
+  <div class="flex-item-left">Bölüm2</div>
+  <div class="flex-item-right">Login1</div>
+</div>
+</body>
