@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grit Layout1</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 150px);
+      
+      gap: 10px;
+    }
+
+    .grid-item {
+      
+      
+      text-align: center;
+      
+    }
+
+    .grid-item.uzun {
+        padding: 20px;
+      grid-column: span 3;
+      grid-row: span 1;
+      
+    }
+
+    .grid-item.kare {
+        padding:50px;
+      grid-column: span 1;
+      grid-row: span 2;
+      
+    }
+
+    .grid-item.ikili {
+        padding: 30px;
+      grid-column: span 2;
+      grid-row: span 2;
+     
+    }
+
+    .grid-item.tekli {
+      grid-column: span 1;
+      grid-row: span 2;
+      padding: 30px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item uzun" style="background-color: red">BEŞİKTAŞ</div>
+    <div class="grid-item kare" style="background-color: blue">FENERBAHÇE</div>
+    <div class="grid-item kare" style="background-color: yellow">GALATASARAY</div>
+    <div class="grid-item kare" style="background-color: purple" >TRABZONSPOR</div>
+    <div class="grid-item ikili" style="background-color: rgb(6, 104, 5)">ADANA DEMİR</div>
+    <div class="grid-item tekli" style="background-color: green">ANKARAGÜCÜ</div>
+    <div class="grid-item uzun" style="background-color: rgb(172, 172, 11)">SAMSUNSPOR</div>
+  </div>
+</body>
+</html>
