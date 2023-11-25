@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-.flex-container > div {
-  color: black;
-  width: 400px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-  
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
-  background-color: #fafafa;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bburakk</title>
 
-.flex-item-left {
-  background-color: #915b5b;
-  padding: 10px;
-  
-}
+    <style>
+        body{
+            background-color: white;
+        }
+        
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid white;  
+        }
+        .container :hover{
+            color: white;
+            cursor: pointer;
+        }
+        
+        .flexitem{
+            justify-content: space-around;
+            width: 40%;           
+            align-items: center;
+            width: 100px;
+            padding: 50px;
+            background-color: #915b5b;
+           
+        }
+        .flexitem2{
+            display: flex;
+            width: 100px;
+            padding :50px;
+            background-color:green;
+        }
 
-.flex-item-right {
-  background-color: #915b5b;
-  padding: 10px;
+        @media screen and (max-width: 1200px){
+            .container{
+                flex-direction: row;
+            }
+            .flexitem ,
+            .flexitem2{
+                width: 40%;
+            }
+        }
+            
+        @media screen and (max-width: 600px){
+            .container{
+                flex-direction:column;
+            }
+            .flexitem,
+            .flexitem2{
+                width: 90%;
+            }
+        }
 
-}
-
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-</style>
+    </style>
 </head>
 <body>
-
-
-
-<div class="flex-container">
-  <div class="flex-item-left">Kapak</div>
-  <div class="flex-item-left">İçindekiler</div>
-  <div class="flex-item-left">Önsöz</div>
-  <div class="flex-item-left">Bölüm</div>
-  <div class="flex-item-left">Bölüm2</div>
-  <div class="flex-item-right">Login</div>
-</div>
+    <div class="container">
+     <div class="flexitem" >Kapak</div>
+     <div class="flexitem">İçindekiler</div>
+     <div class="flexitem">Önsöz</div>
+     <div class="flexitem">Bölüm</div>
+     <div class="flexitem">Bölüm2</div>
+     <div class="flexitem2">Login</div>
+     </div>
 </body>
+</html>
