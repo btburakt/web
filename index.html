@@ -22,43 +22,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BTE 2021 KİŞİSEL SAYFAM C2220774030 </title>
+    <title>Kişisel Bilgilerim</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            line-height: 1.6;
         }
 
-        form {
-            max-width: 600px;
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        input[type="file"] {
-            margin: 8px 0;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
         }
 
         img {
@@ -66,74 +40,68 @@
             margin: 10px 0;
             width: 200px;
             height: 250px;
+            border: 2px solid #ddd;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        .label {
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-<h2>BTE 2021 KİŞİSEL SAYFAM C2220774030</h2>
+<div class="container">
+    <h2>Kişisel Bilgilerim</h2>
 
-<form>
-    <label for="adsoyad">Adınız Soyadınız:</label><br>
-    <input type="text" id="adsoyad" name="adsoyad" required><br><br>
+    <img src="path-to-your-photo.jpg" alt="Fotoğraf">
 
-    <label for="email">E-posta adresiniz:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+    <div class="info">
+        <p><span class="label">Adınız Soyadınız:</span> Adınız Soyadınız</p>
 
-    <label for="photo">Fotoğraf Yükleyin:</label><br>
-    <input type="file" id="photo" name="photo" accept="image/*" onchange="previewPhoto()" required><br><br>
+        <p><span class="label">E-posta adresiniz:</span> email@example.com</p>
 
-    <img id="photoPreview" src="#" alt="Fotoğraf Önizlemesi" style="display:none;"><br>
+        <p><span class="label">Sahip olduğunuz programlama bilgi ve tecrübeniz:</span> 
+            Birçok farklı programlama dilinde tecrübeliyim. Python, Java, C++, HTML, CSS ve JavaScript gibi dillerde çalışmalar yaptım.
+        </p>
 
-    <label for="programlama">Sahip olduğunuz programlama bilgi ve tecrübenizi açıklayınız:</label><br>
-    <textarea id="programlama" name="programlama" rows="4" required></textarea><br><br>
+        <p><span class="label">Sahip olduğunuz yazılım (Word, Excel, Photoshop, ...) bilgi ve tecrübeniz:</span> 
+            Microsoft Office programları ve Photoshop konusunda deneyim sahibiyim. Excel üzerinde ileri seviye analiz ve grafikler oluşturabiliyorum.
+        </p>
 
-    <label for="yazilim">Sahip olduğunuz yazılım (Word, Excel, Photoshop, ...) bilgi ve tecrübenizi açıklayınız:</label><br>
-    <textarea id="yazilim" name="yazilim" rows="4" required></textarea><br><br>
+        <p><span class="label">Programlama ile ilgili daha önce aldığınız dersler:</span> 
+            Üniversitede C ve Python üzerine temel ve ileri düzey dersler aldım. Proje olarak web geliştirme ve veri analiz çalışmaları yaptım.
+        </p>
 
-    <label for="dersler">Programlama ile ilgili daha önce aldığınız dersleri listeleyip bu derslerde ne yaptığınızı açıklayınız:</label><br>
-    <textarea id="dersler" name="dersler" rows="4" required></textarea><br><br>
+        <p><span class="label">Programlama seviyeniz:</span> İleri seviyede</p>
 
-    <label for="seviye">Programlama seviyeniz:</label><br>
-    <select id="seviye" name="seviye" required>
-        <option value="başlangıç">Başlangıç seviyesinde</option>
-        <option value="orta">Orta seviyede</option>
-        <option value="ileri">İleri seviyede</option>
-    </select><br><br>
+        <p><span class="label">Bu ders için kişisel amaç ve hedefleriniz:</span> 
+            Programlama becerilerimi daha da geliştirmek ve yeni teknolojiler öğrenmek istiyorum.
+        </p>
 
-    <label for="amaçlar">Bu ders için kişisel amaç ve hedeflerinizi açıklayınız:</label><br>
-    <textarea id="amaçlar" name="amaçlar" rows="4" required></textarea><br><br>
-
-    <label for="beklentiler">Bu dersten beklentilerinizi açıklayınız:</label><br>
-    <textarea id="beklentiler" name="beklentiler" rows="4" required></textarea><br><br>
-
-    <input type="submit" value="Gönder">
-</form>
-
-<script>
-    function previewPhoto() {
-        const photoInput = document.getElementById('photo');
-        const photoPreview = document.getElementById('photoPreview');
-
-        const file = photoInput.files[0];
-        const reader = new FileReader();
-
-        reader.onloadend = function() {
-            photoPreview.src = reader.result;
-            photoPreview.style.display = "block";
-        }
-
-        if (file) {
-            reader.readAsDataURL(file);
-        } else {
-            photoPreview.src = "#";
-            photoPreview.style.display = "none";
-        }
-    }
-</script>
+        <p><span class="label">Bu dersten beklentileriniz:</span> 
+            Daha karmaşık projeleri yönetme ve yazılım geliştirme süreçlerini detaylıca öğrenmek.
+        </p>
+    </div>
+</div>
 
 </body>
 </html>
+
 
 
     
